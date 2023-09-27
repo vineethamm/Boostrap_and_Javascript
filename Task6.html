@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<style>
+        .container {
+            margin-top: 10px;
+            width: 60%;
+            align-items: center;
+            padding:10px;
+        }
+</style>
+<body>
+    <div class="container borderless bg-secondary">
+        <form id="Form" method="post" action=" ">
+
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <div class="input-group ">
+                    <input type="text" class="form-control" id="firstname" name="firstname"  required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail</label>
+                <div class="input-group">
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+
+
+            <div class="form-group ">
+                <label for="passwd">Password</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="passwd" name="passwd" required>
+                </div>
+            </div>
+            <div class="form-group ">
+                <button type="submit" class="btn btn-danger" style="width: 100%">
+                  Submit
+                </button>
+              </div>
+        </form>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#Form")
+          .bootstrapValidator({
+            fields: {
+              firstname: {
+                validators: {
+                  stringLength: {
+                    min: 2,
+                  },
+                  notEmpty: {
+                    message: "Name is Required",
+                  },
+                },
+              },
+              email: {
+                validators: {
+                  notEmpty: {
+                    message: "Email is Required",
+                  },
+                  emailAddress: {
+                    message: "Email is Required",
+                  },
+                },
+              },
+              passwd: {
+                validators: {
+                  notEmpty: {
+                    message: "Password is Required",
+                  },
+                  Password: {
+                    message: "Password is Required",
+                  },
+                },
+              },
+            },
+          })
+          
+
+
+          });
+
+    </script>
+</body>
+
+</html

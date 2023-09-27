@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+
+    
+
+    <style>
+        .container {
+            margin-top: 10px;
+            width: 60%;
+            align-items: center;
+        }
+
+        .input-group{
+            margin-left:10px;
+            border-radius: 5px;
+            display:flex;
+           
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container borderless bg-secondary">
+        <form id="Form" method="post" action=" ">
+           
+                    <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <div class="input-group ">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control"  id="firstname" name="firstname" placeholder="First Name" required>
+                    </div>
+                </div>
+            
+
+            
+                <div class="form-group ">
+                    <label for="lastname">Last Name</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name " required>
+                    </div>
+                </div>
+            
+            <div class="form-group">
+                <label for="email">E-Mail</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail Address"  required>
+                </div>
+            </div>
+       
+
+            <div class="form-group">
+                <label for="ph">Phone #</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+                    </div>
+                    <input type="tel" class="form-control"  id=name="ph" name="ph" placeholder="(845)555-1212"  required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="ad">Address</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-solid fa-house"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="ad" name="ad" placeholder="Address"  required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-solid fa-house"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="city" name="city" placeholder="City" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="State">State</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-solid fa-list"></i></span>
+                    </div>
+                    <select name="state" class="form-control selectpicker">
+                        <option value=" ">Please select your state</option>
+                        <option value="AN">Andaman and Nicobar Islands</option>
+                        <option value="AP">Andhra Pradesh</option>
+                        <option value="AR">Arunachal Pradesh</option>
+                        <option value="AS">Assam</option>
+                        <option value="BR">Bihar</option>
+                        <option value="CH">Chandigarh</option>
+                        <option value="CT">Chhattisgarh</option>
+                        <option value="DN">Dadra and Nagar Haveli</option>
+                        <option value="DD">Daman and Diu</option>
+                        <option value="DL">Delhi</option>
+                        <option value="GA">Goa</option>
+                        <option value="GJ">Gujarat</option>
+                        <option value="HR">Haryana</option>
+                        <option value="HP">Himachal Pradesh</option>
+                        <option value="JK">Jammu and Kashmir</option>
+                        <option value="JH">Jharkhand</option>
+                        <option value="KA">Karnataka</option>
+                        <option value="KL">Kerala</option>
+                        <option value="LA">Ladakh</option>
+                        <option value="LD">Lakshadweep</option>
+                        <option value="MP">Madhya Pradesh</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="MN">Manipur</option>
+                        <option value="ML">Meghalaya</option>
+                        <option value="MZ">Mizoram</option>
+                        <option value="NL">Nagaland</option>
+                        <option value="OR">Odisha</option>
+                        <option value="PY">Puducherry</option>
+                        <option value="PB">Punjab</option>
+                        <option value="RJ">Rajasthan</option>
+                        <option value="SK">Sikkim</option>
+                        <option value="TN">Tamil Nadu</option>
+                        <option value="TG">Telangana</option>
+                        <option value="TR">Tripura</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="UT">Uttarakhand</option>
+                        <option value="WB">West Bengal</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label>Do you have hosting?</label>
+                <div class="input-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Radios" id="exampleRadios1" value="option1"checked required>
+                        <label class="form-check-label" for="Radios1">Yes</label>
+                    </br>
+                        <input class="form-check-input" type="radio" name="Radios" id="exampleRadios2" value="option2" required>
+                        <label class="form-check-label" for="Radios2">no</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="pd">Project Description </label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-solid fa-pen"></i></span>
+                    </div>
+                    <textarea placeholder="Project Description required"></textarea>
+                </div>
+            </div>
+
+
+
+            <button type="submit"  id="success_message"class="btn btn-warning">Save<i class="fa-solid fa-check"></i></button>
+        </form>
+    </div>
+
+    <script>
+  $(document).ready(function() {
+  $('#Form').bootstrapValidator({
+      
+      fields: {
+          firstname: {
+              validators: {
+                      stringLength: {
+                      min: 2,
+                  },
+                      notEmpty: {
+                      message: 'Please supply your first name'
+                  }
+              }
+          },
+           lastname: {
+              validators: {
+                   stringLength: {
+                      min: 2,
+                  },
+                  notEmpty: {
+                      message: 'Please supply your last name'
+                  }
+              }
+          },
+          email: {
+              validators: {
+                  notEmpty: {
+                      message: 'Please supply your email address'
+                  },
+                  emailAddress: {
+                      message: 'Please supply a valid email address'
+                  }
+              }
+          },
+          ph: {
+              validators: {
+                  notEmpty: {
+                      message: 'Please supply your phone number'
+                  },
+                  phone: {
+                      country: 'US',
+                      message: 'Please supply a vaild phone number with area code'
+                  }
+              }
+          },
+          ad: {
+              validators: {
+                   stringLength: {
+                      min: 8,
+                  },
+                  notEmpty: {
+                      message: 'Please supply your street address'
+                  }
+              }
+          },
+          city: {
+              validators: {
+                   stringLength: {
+                      min: 4,
+                  },
+                  notEmpty: {
+                      message: 'Please supply your city'
+                  }
+              }
+          }
+          
+          
+          
+          }
+      })
+      .on('success.form.bv', function(e) {
+          $('#success_message').slideDown({ opacity: "show" }, "slow") 
+              $('#Form').data('bootstrapValidator').resetForm();
+
+          e.preventDefault();
+
+          var $form = $(e.target);
+
+          var bv = $form.data('bootstrapValidator');
+
+
+          $.post($form.attr('action'), $form.serialize(), function(result) {
+              console.log(result);
+          }, 'json');
+      });
+});
+
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
